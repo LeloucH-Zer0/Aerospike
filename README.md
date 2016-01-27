@@ -1,1 +1,1 @@
-This is the first time I'm working on Git. I have been working on this project for my company. I'll push the complete project when I finishing removing all confidential information. I pushed these two files for now. Hope you can manage with this.
+This is the first time I'm working on Git. This is a code I used for building a different project. I'll push the entire code when I remove all dependencies to the original project. 

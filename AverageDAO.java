@@ -32,11 +32,11 @@ import com.snapdeal.redap.base.ErrorClass;
  * 					EXAMPLE : COURIERNAME|eq|BLUEDART|AVERAGE|g|10
  * 
  * 2. projections	: projections_1|projections_2
- * 					EXAMPLE : COURIERNAME-AVERAGE
+ * 					EXAMPLE : COURIERNAME|AVERAGE
  * 
  * 3. groupBy		: groupBy_field|[TIME]
  * 
- * 					EXAMPLE : COURIERNAME      or    TIMESTAMP-86400
+ * 					EXAMPLE : COURIERNAME      or    TIMESTAMP|86400
  * 					The first example groups the resultset according to the CourierName and the second example groups
  * 					the resultset according to 86400 seconds (i.e 1 day).  
  * 					     	
