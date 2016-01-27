@@ -1,0 +1,1 @@
+This is the first time I'm working on Git. I have been working on this project for my company. I'll push the complete project when I finishing removing all confidential information. I pushed these two files for now. Hope you can manage with this.
