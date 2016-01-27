@@ -27,7 +27,7 @@ import com.snapdeal.redap.base.ErrorClass;
  * 
  * 
  * Format set for the above three inputs
- * 1. Filters 		: filter_bin1-operation-value_1-filter_bin2-operation-value_2 where
+ * 1. Filters 		: filter_bin1|operation|value_1|filter_bin2|operation|value_2 where
  * 				  	  operations can be one of {eq,leq,geq,g,l}
  * 					EXAMPLE : COURIERNAME|eq|BLUEDART|AVERAGE|g|10
  * 
