@@ -89,12 +89,26 @@ function get_results(stream,filters,groupbys,projections)
     local is_valid=true;
     for i = 1, (#myTable)/3 do
       if(myTable[i*3-1] == 'eq') then
-        if(record[myTable[i*3-2]] == myTable[i*3]) then
+        -- if(record[myTable[i*3-2]] == myTable[i*3]) then
+        --   is_valid=true
+        -- else
+        --   is_valid=false
+        --   break
+        -- end
+        local equalsTable = string.split(myTable[i*3],"#")
+        local equalsCheck = false
+        for equalsLoopVar=1,#equalsTable do
+          if(record[myTable[i*3-2]]== equalsTable[equalsLoopVar]) then
+            equalsCheck=true
+            break
+          end
+        end
+        if(equalsCheck == true) then
           is_valid=true
         else
           is_valid=false
           break
-        end
+        end    
       elseif(myTable[i*3-1] == 'g') then
         if(record[myTable[i*3-2]] > myTable[i*3]) then
           is_valid=true
